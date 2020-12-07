@@ -3,11 +3,12 @@
 # Requirements
  Ruby, gem rspec, gem selenium-webdriver
 # Features
- Page Objects
+ 1. Add a product to cart
+ 2. See product on Quick Look Overlay 
 # Get Started
  Clone this repo, then run bundle install
 # Execute test cases: 
- run rake
+ rake
 # Author
 Denis Shirokikh
 
