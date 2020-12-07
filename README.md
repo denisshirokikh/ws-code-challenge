@@ -10,3 +10,8 @@
  run bundle exec rspec
 # Author
 Denis Shirokikh
+
+# Issues discovered:
+1. User see modal after click on subcategory "Salt & Pepper Mills", which is not match provided
+  acceptance criteria or technical details.
+2. MobileWeb view - clicks on QUICKLOOK doesn't show product overlay

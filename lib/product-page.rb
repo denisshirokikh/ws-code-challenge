@@ -7,7 +7,7 @@ class ProductPage < AbstractPage
     @overlay = @browser.find_element(id: 'racOverlay')
     @checkout_button = @browser.find_element(id: 'anchor-btn-checkout')
     @product_title = @browser.find_element(:link_text, 'Trudeau Graviti Electric Salt & Pepper Mill Set, Gunmetal')
-    @product_image = @browser.find_element(css: '#subcat-page > div.sub-cat-container > section > div:nth-child(9) > div > div:nth-child(13) > div > div > a > img'
+    @product_image = @browser.find_element(css: '#subcat-page > div.sub-cat-container > section > div:nth-child(9) > div > div:nth-child(13) > div > div > a > img')
   end
 
   def close_modal

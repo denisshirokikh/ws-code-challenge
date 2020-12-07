@@ -4,8 +4,6 @@ class SearchPage < AbstractPage
 
   def initialize(driver)
     super(driver)
-    @search_field = @browser.find_element(css: '#search-field')
-    @search_button = @browser.find_element(css: '#btnSearch')
     @search_results = @browser.find_element(css: '#search-tiles')
     @quick_look_element = @browser.find_element(css: '#search-tiles > ul > li:nth-child(1) > div.product-copy > quick-look > div > a')
     @product_overlay = @browser.find_element(css: '#quicklookOverlay')
@@ -15,10 +13,6 @@ class SearchPage < AbstractPage
     @overlay_product_name = @browser.find_element(css: '#purchasing-container > div.pip-info > div > h1')
     end
 
-  def perform_search
-    @search_field.send_keys('fry pan')
-    @search_button.click
-  end
   def search_results_displayed?
     @search_results
   end
