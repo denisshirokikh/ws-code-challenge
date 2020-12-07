@@ -7,13 +7,13 @@
 # Get Started
  Clone this repo, then run bundle install
 # Execute test cases: 
- run bundle exec rspec
+ run rake
 # Author
 Denis Shirokikh
 
-# Issues discovered:
-1. User see modal after click on subcategory "Salt & Pepper Mills", which is not match provided
-    acceptance criteria or technical details.
+# Issues discovered: (see screenshots folder)
+1. User see modal after click on subcategory "Salt & Pepper Mills", which is not match 
+with provided acceptance criteria or technical details.
 2. MobileWeb view - clicks on QUICKLOOK doesn't show product overlay
 3. User able to add product in cart with invalid ZIPCODE (00000)
 

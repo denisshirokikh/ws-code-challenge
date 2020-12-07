@@ -1,3 +1,5 @@
+require_relative '../config/test_helper'
+
 class ShoppingCartPage < AbstractPage
 
   def initialize(driver)

@@ -64,14 +64,6 @@ module TestHelper
     @browser.get("#{base_url}#{page}")
   end
 
-
-  def assert_link_present_with_text(link_text)
-    @browser.links.each { |link|
-      return if link.text.include?(link_text)
-    }
-    raise ("can't find the link containing text: #{link_text}")
-  end
-
   def assert_element_present(element)
     @browser.find_element(element).displayed?
   end
